@@ -1,0 +1,2 @@
+0 22 * * * root /etc/init.d/lightdm stop
+0 8 * * * root /etc/init.d/lightdm start
