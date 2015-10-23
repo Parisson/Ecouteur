@@ -14,6 +14,10 @@ mopidy&
 
 sleep 6
 
+# 4 channels
+jack_connect mopidy:out_jackaudiosink0_1 system:playback_3
+jack_connect mopidy:out_jackaudiosink0_2 system:playback_4
+
 #mpc clear
 mpc load $playlist
 mpc play
