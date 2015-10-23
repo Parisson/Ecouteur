@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sleep 6
+
 DOW=$(date +%u)
 
 declare -A playlists
@@ -9,10 +11,10 @@ playlists=([1]="lundi" [2]="mardi" [3]="mercredi" [4]="jeudi" [5]="vendredi" [6]
 playlist=${playlists[$DOW]}
 
 mopidy&
+
 sleep 6
-mpc clear
-sleep 1
+
+#mpc clear
 mpc load $playlist
-sleep 1
 mpc play
 

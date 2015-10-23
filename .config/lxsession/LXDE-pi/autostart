@@ -1,15 +1,17 @@
-#@lxpanel --profile LXDE-pi
-#@pcmanfm --desktop --profile LXDE-pi
-#@xscreensaver -no-splash
-#@sh ${HOME}/.config/lxsession/LXDE-pi/autokey.sh
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+@sh ${HOME}/.config/lxsession/LXDE-pi/autokey.sh
 
 @xset s off
 @xset -dpms
 @xset s noblank
+@/home/pi/bin/jackd.sh >> /tmp/jackd-start.log
 @/home/pi/bin/mopidy-start.sh >> /tmp/mopidy-start.log
 @xte 'sleep 10' 'key F11'
-@xte 'sleep 11' 'key Escape'
-@epiphany-browser http://192.168.0.32:6680/musicbox_webclient/index.html
+@xte 'sleep 10' 'key Escape'
+@epiphany-browser http://192.168.0.32:6680/simple-webclient/#now-playing
+
 
 #@epiphany-browser http://192.168.0.33:6680/musicbox_webclient/index.html#nowPlaying 
 #@epiphany-browser -a --profile ~/.config  http://192.168.0.33:6680/musicbox_webclient/index.html#nowPlaying
