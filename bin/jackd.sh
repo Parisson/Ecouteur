@@ -37,7 +37,7 @@ killall gvfsd
 echo -n performance | sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 
 ## And finally start JACK
-jackd -R -P70 -dalsa -dhw:1 -p2048 -n3 -r44100 &
+jackd -R -P70 -dalsa -dhw:0 -p2048 -n3 -r44100 &
 
 #jackd -P70 -dalsa -Chw:1 -r 32000 -s
 
