@@ -1,2 +1,5 @@
-0 22 * * * root /etc/init.d/lightdm stop
-0 8 * * * root /etc/init.d/lightdm start
+#0 18 * * * root /etc/init.d/lightdm stop
+#0 9 * * * root /etc/init.d/lightdm start
+
+1-59/2 * * * * root /etc/init.d/lightdm stop && pkill -9 -f jackd
+0-58/2 * * * * root /etc/init.d/lightdm start
