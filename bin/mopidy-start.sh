@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 6
+sleep 3
 
 DOW=$(date +%u)
 
@@ -12,7 +12,7 @@ playlist=${playlists[$DOW]}
 
 mopidy&
 
-sleep 6
+sleep 3
 
 # 4 channels
 #jack_connect mopidy:out_jackaudiosink0_1 system:playback_3
