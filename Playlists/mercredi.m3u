@@ -1,7 +1,9 @@
 #EXTM3U
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
+#EXTINF:820,Unlimited Fellini
+file:///home/pi/Music/mercredi/BURGER%20Rodolphe%20-%20Unlimited%20Fellini%20-%20FNAC%2003-533.flac
+#EXTINF:876,8 et quelques
+file:///home/pi/Music/mercredi/KATERINE%20Philippe%20-%208%20et%20quelques%20-%20FNAC%2003-233.flac
+#EXTINF:1025,Recordare
+file:///home/pi/Music/mercredi/RADIOMENTALE%20Recordare%202012.flac
+#EXTINF:2227,Chasser Croiser // Le Surréel et son écho
+file:///home/pi/Music/mercredi/THEVENIN%20Chloe%20Chasser%20Croiser.flac

@@ -22,7 +22,7 @@ sleep 6
 mpc load $playlist
 mpc play
 
-epiphany-browser http://192.168.0.100:6680/ecouteur/ &
+epiphany-browser http://localhost/ecouteur/ &
 
 sleep 6
 

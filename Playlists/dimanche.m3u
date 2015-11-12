@@ -1,7 +1,5 @@
 #EXTM3U
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
+#EXTINF:2362,Quatuor concret n°4
+file:///home/pi/Music/dimanche/LERICOLAIS%20Rainier%20Quatuor%20concret%20n4.flac
+#EXTINF:2699,Water days / Jours d'eau
+file:///home/pi/Music/dimanche/RANALDO%20Lee%20SINGER%20Leah%20Water%20Days.flac

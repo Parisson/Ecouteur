@@ -1,7 +1,15 @@
 #EXTM3U
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
+#EXTINF:330,Collector : Demons in the Details
+file:///home/pi/Music/jeudi/BURGER%20Rodolphe%2001%20Demons%20in%20the%20Details.flac
+#EXTINF:2194,Collector : Hommage à Mahmoud Darwich
+file:///home/pi/Music/jeudi/BURGER%20Rodolphe%2002%20Hommage%20a%20Mahmoud%20Darwich.flac
+#EXTINF:437,Collector : Waiting for my Man
+file:///home/pi/Music/jeudi/BURGER%20Rodolphe%2003%20Waiting%20for%20my%20Man.flac
+#EXTINF:354,Collector : Das Lied vom einsamen Mädchen
+file:///home/pi/Music/jeudi/BURGER%20Rodolphe%2004%20Das%20Lied%20vom%20einsamen%20Madchen.flac
+#EXTINF:309,Collector : Kaspar
+file:///home/pi/Music/jeudi/BURGER%20Rodolphe%2005%20Kaspar.flac
+#EXTINF:380,Collector : Psychopharmaka
+file:///home/pi/Music/jeudi/BURGER%20Rodolphe%2006%20Psychopharmaka.flac
+#EXTINF:2280,Variation autour de « La Leçon de français »
+file:///home/pi/Music/jeudi/MATTA%20Ramuntcho%20Variation%20autour%20de%20La%20Lecon%20de%20francais.flac

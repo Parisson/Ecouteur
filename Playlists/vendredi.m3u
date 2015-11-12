@@ -1,7 +1,5 @@
 #EXTM3U
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
-#EXTINF:2699,Water days/Jours d'eau
-file:///home/pi/Music/Ecouteur/WaterDays.flac
+#EXTINF:4517,ACR RMX
+file:///home/pi/Music/vendredi/RADIOMENTALE%20ACR%20RMX.flac
+#EXTINF:869,& That Was the Trouble with Aristotle?
+file:///home/pi/Music/vendredi/WEINER%20Lawrence%20-%20and%20that%20was%20the%20trouble%20with%20Aristotle%20-%20FNAC%2010-831.flac
