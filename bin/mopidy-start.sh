@@ -20,6 +20,8 @@ sleep 6
 
 #mpc clear
 mpc load $playlist
+mpc consume off
+mpc repeat on
 mpc play
 
 epiphany-browser http://localhost/ecouteur/ &
