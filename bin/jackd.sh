@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 ## Stop the ntp service
-sudo service ntp stop
+#sudo service ntp stop
 
 ## Stop the triggerhappy service
 sudo service triggerhappy stop
@@ -10,10 +10,10 @@ sudo service triggerhappy stop
 #sudo service dbus stop
 
 ## Stop the console-kit-daemon service. Warning: this can cause unpredictable behaviour when running a desktop environment on the RPi
-sudo killall console-kit-daemon
+#sudo killall console-kit-daemon
 
 ## Stop the polkitd service. Warning: this can cause unpredictable behaviour when running a desktop environment on the RPi
-sudo killall polkitd
+#sudo killall polkitd
 
 ## Only needed when Jack2 is compiled with D-Bus support (Jack2 in the AutoStatic RPi audio repo is compiled without D-Bus support)
 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/dbus/system_bus_socket
@@ -22,7 +22,7 @@ export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/dbus/system_bus_socket
 sudo mount -o remount,size=128M /dev/shm
 
 ## Kill the usespace gnome virtual filesystem daemon. Warning: this can cause unpredictable behaviour when running a desktop environment on the RPi
-killall gvfsd
+#killall gvfsd
 
 ## Kill the userspace D-Bus daemon. Warning: this can cause unpredictable behaviour when running a desktop environment on the RPi
 #killall dbus-daemon
@@ -37,7 +37,7 @@ killall gvfsd
 echo -n performance | sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 
 ## And finally start JACK
-jackd -R -P70 -dalsa -dhw:1 -p2048 -n3 -r44100 &
+jackd -R -P70 -dalsa -dhw:1 -p4096 -n3 -r44100 &
 
 #jackd -P70 -dalsa -Chw:1 -r 32000 -s
 

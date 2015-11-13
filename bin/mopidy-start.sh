@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 3
+sleep 5
 
 DOW=$(date +%u)
 
@@ -12,7 +12,7 @@ playlist=${playlists[$DOW]}
 
 mopidy&
 
-sleep 3
+sleep 5
 
 # 4 channels
 #jack_connect mopidy:out_jackaudiosink0_1 system:playback_3
@@ -24,9 +24,13 @@ mpc consume off
 mpc repeat on
 mpc play
 
+sleep 1
+
+piplayer-mpd &
+
 epiphany-browser http://localhost/ecouteur/ &
 
-sleep 6
+sleep 5
 
 xte 'key F11'
 
