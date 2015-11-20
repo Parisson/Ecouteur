@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 5
+sleep 10
 
 DOW=$(date +%u)
 
@@ -26,7 +26,7 @@ mpc play
 
 sleep 1
 
-piplayer-mpd &
+#piplayer-mpd &
 
 epiphany-browser http://localhost/ecouteur/ &
 
