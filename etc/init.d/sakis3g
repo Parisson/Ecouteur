@@ -1,0 +1,39 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          sakis3g
+# Required-Start:
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: init-Script for system wide fetchmail daemon
+### END INIT INFO
+
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+DESC="Sakis3g server"
+NAME=sakis3g
+DAEMON=/usr/local/bin/sakis3g
+PIDFILE=/var/run/$NAME.pid
+SCRIPTNAME=/etc/init.d/$NAME
+
+# Exit if the package is not installed
+[ -x $DAEMON ] || exit 0
+
+# Read configuration variable file if present
+[ -r /etc/default/$NAME ] && . /etc/default/$NAME
+
+# Define LSB log_* functions.
+#. /lib/lsb/init-functions
+
+case "$1" in
+	start)
+            #sleep 10
+	    #log_begin_msg "Starting sakis3g:" "sakis3g"
+ 	    $DAEMON --sudo "connect" &
+	    ;;
+	stop)
+	    #log_begin_msg "Stopping sakis3g:" "sakis3g"
+            $DAEMON --sudo "disconnect"
+            ;;
+esac
+
+exit 0
