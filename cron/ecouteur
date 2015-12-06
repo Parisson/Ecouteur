@@ -1,5 +1,18 @@
-#0 18 * * * root /etc/init.d/lightdm stop
+#0 9   * * 2,3,4,5 root /etc/init.d/lightdm start
+#0 10  * * 6,0    root /etc/init.d/lightdm start
+
+0 9   * * *      root /etc/init.d/lightdm start
+0 18  * * *      root /etc/init.d/lightdm stop
+#0 21  * * *      root /etc/init.d/lightdm stop
+0 8   * * *      root hwclock -s
+#0 0   * * 0      root /etc/init.d/jackd stop; sleep 10; /etc/init.d/jackd start
+
+#0 18 * * * root /etc/init.d/lightdm stop; pkill -9 -f piplayer-mpd
 #0 9 * * * root /etc/init.d/lightdm start
 
-1-59/2 * * * * root /etc/init.d/lightdm stop && pkill -9 -f jackd
-0-58/2 * * * * root /etc/init.d/lightdm start
+#1-59/2 * * * * root /etc/init.d/lightdm stop
+#0-58/2 * * * * root /etc/inot.d/lightdm start
+
+#0 * * * * root pkill -9 -f piplayer-mpd; /etc/init.d/lightdm stop && pkill -9 jackd; /etc/init.d/lightdm start
+
+#*/5 * * * * root /etc/init.d/lightdm stop; sleep 10; /etc/init.d/lightdm start
